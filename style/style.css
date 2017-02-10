@@ -1,0 +1,178 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 Microsoft Yahei,arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+button,input{ outline: none; }
+
+.m-chatDetail-hd,
+.m-chatDetail-ft{
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: #fff;
+
+}
+
+.m-chatDetail-hd{
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.m-chatDetail-bd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: #eee;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.m-chatDetail-ft{
+    display: flex;
+    height: 40px;
+    bottom: 0;
+    border-top: 1px solid #eee;
+}
+
+.btn-emoji{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: inherit;
+    background-image: url(../images/btn-emoji.png);
+    background-size: cover;
+    border: 0;
+}
+.inputMsg{
+    flex: 1;
+    max-height: 20px;
+    padding: 10px 5px;
+    overflow-y: auto;
+    font-size: 18px;
+    overflow-y: auto;
+    outline: none;
+
+}
+.sendMsg{
+    position: relative;
+    top: -1px;
+    height: 41px;
+    padding-left: 30px;
+    padding-right : 30px;
+    font-size: 16px;
+    border: 0;
+    background: #508bee;
+    color: #fff
+}
+
+.charLogList{
+    display: block;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    /*padding-top: 70px;*/
+    padding: 70px 20px;
+}
+
+.charLogList li{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.charLogList .headPortrait{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.charLogList .msg-wrap{
+    display: inline-block;
+    flex: 1;
+
+
+}
+
+.charLogList .msg{
+    display: inline-block;
+    padding: 10px;
+    min-height: 14px;
+    line-height: 20px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.charLogList .oneSelf{
+    justify-content: flex-end;
+}
+
+.charLogList .oneSelf .headPortrait{
+    right: 10px;
+    margin-right: inherit;
+    margin-left: 15px;
+}
+
+.charLogList .oneSelf .msg{
+    flex: 1;
+    align-self: flex-start;
+    background: #8c0;
+    color: #fff;
+}
+
+.select-user{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+.select-user div{
+    display: inline-block;
+    width: 60%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 38px;
+    color: #fff;
+}
+
+.select-user .user1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #6cf;
+}
+
+.select-user .user2{
+    background: #8c0;
+}

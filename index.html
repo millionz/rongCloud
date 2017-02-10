@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IM Demo</title>
+    <meta http-equiv="Pragma" contect="no-cache">
+    <!-- 是否启用 WebApp 全屏模式 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 添加到主屏后的标题（iOS 6 新增） -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+
+</head>
+<body>
+
+    <div class="select-user">
+        <div class="user1 js-selectUserA">用户A</div>
+        <div class="user2 js-selectUserB">用户B</div>
+    </div>
+
+
+    <div class="m-chatDetail">
+        <div class="m-chatDetail-hd js-targetName"> 聊天 </div>
+        <div class="m-chatDetail-bd">
+            <ul class="charLogList js-charLogList"></ul>
+        </div>
+        <div class="m-chatDetail-ft">
+            <button class="btn-emoji"></button>
+            <div class="inputMsg js-inputMsg" contenteditable="true"></div>
+            <button class="sendMsg js-sendMsgBtn">发送</button>
+        </div>
+    </div>
+
+
+<script src="js/zepto.min.js"></script>
+
+<script src="js/RongIMLib-2.2.4.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
